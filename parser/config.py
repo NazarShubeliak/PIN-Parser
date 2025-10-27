@@ -17,6 +17,14 @@ GMI_API_TOKEN: str = os.getenv("GMI_API_TOKEN", "")
 GMI_ACCOUNT_ID: str = os.getenv("GMI_ACCOUNT_ID", "")
 GMI_URL: str = os.getenv("GMI_URL", "https://api.getmyinvoices.com/accounts/v3/documents")
 
+# API Header
+HEADER: dict = {
+    "X-API-KEY": GMI_API_TOKEN,
+    "Accept": "application/json",
+    "User-Agent": f"pin-fetcher/1.0 {GMI_ACCOUNT_ID}",
+    "x-application": "Desktop-App"
+}
+
 # Date Format
 DATE_FORMAT = "%Y-%m-%d"
 
