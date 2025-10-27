@@ -29,12 +29,9 @@ def find_document(folder_path: Path) -> List[str]:
     Returns:
         List[str]: List of all documents
     """
-    documents = []
     for filename in os.listdir(folder_path):
         if filename.endswith(".pdf") and not filename.endswith("Mail_AG.pdf"):
-            path = folder_path / filename
-            documents.append(path)
+            document_path = folder_path / filename
+            logger.info(f"In folder: {folder_path} find {filename} documents")
+            return document_path
 
-    logger.info(f"In folder: {folder_path} find {len(documents)} documents")
-
-    return documents

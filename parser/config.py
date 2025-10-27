@@ -49,4 +49,5 @@ logging.basicConfig(
     ]
 )
 
+logging.getLogger("pdfminer").setLevel(logging.WARNING)
 logger = logging.getLogger("pin_parser")

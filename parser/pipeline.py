@@ -1,8 +1,8 @@
 
 from parser.config import logger, DOWNLOAD_DIR
 from parser.api_client import fetch_documents, download_all_documents
-from parser.tools import clear_folder
-from parser.pdf_parser import parse_pdf
+from parser.tools import clear_folder, find_document
+from parser.pdf_parser import run_parser
 
 def run_pipeline(start_date: str, end_date: str) -> None:
     """Run the full PIN parsing pipeline"""
@@ -21,4 +21,5 @@ def run_pipeline(start_date: str, end_date: str) -> None:
     logger.info(f"Download all documents to {DOWNLOAD_DIR}")
 
     # Step 4: Parsing document
-    parse_pdf(DOWNLOAD_DIR)
+    filename = find_document(DOWNLOAD_DIR)
+    german, non_europe, europe = run_parser(filename) # German, NON-Europe, Europe
