@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Folder
+pin_docs
+
 # Distribution / packaging
 .Python
 build/
@@ -158,6 +161,7 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+token.json
 
 # Pyre type checker
 .pyre/
