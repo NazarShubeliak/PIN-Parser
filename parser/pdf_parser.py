@@ -1,3 +1,13 @@
+"""
+PDF Parser for PIN invoices.
+
+Extracts structured financial data from PDF documents, including totals by region:
+- GERMAN
+- NON-EUROPE
+- EUROPE
+
+Designed to be modular and extensible for future invoice formats.
+"""
 import re
 from typing import List, Tuple, Dict
 from pathlib import Path

@@ -1,3 +1,10 @@
+"""
+Weekly pipeline trigger.
+
+Runs every Monday, checks previous week's documents.
+If documents exist → runs pipeline.
+Else → exits silently.
+"""
 from datetime import date, timedelta
 from typing import Tuple
 

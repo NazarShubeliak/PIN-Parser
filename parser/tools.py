@@ -1,3 +1,10 @@
+"""
+Simpli tools 
+
+Includes:
+- Clear Folder
+- Find PDF document
+"""
 import os
 from pathlib import Path
 from typing import List

@@ -1,3 +1,12 @@
+"""
+Command-line interface for triggering pipeline.
+
+Supports:
+- -week → weekly_runner
+- -month → monthly_runner
+
+Can be extended with --from, --to, --dry-run, etc.
+"""
 import argparse
 from parser import run_pipeline
 from runners import monthly_run, get_last_week_range

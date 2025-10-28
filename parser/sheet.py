@@ -1,3 +1,14 @@
+"""
+Google Sheets integration.
+
+Provides GoogleSheetWriter class to:
+- Append rows with totals
+- Update specific cells
+- Handle authentication via service account
+
+Used as final output step in the pipeline.
+"""
+
 import gspread
 from parser.config import logger, GOOGLE_TOKEN
 from oauth2client.service_account import ServiceAccountCredentials

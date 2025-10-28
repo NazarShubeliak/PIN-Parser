@@ -1,3 +1,12 @@
+"""
+API client for fetching invoice metadata.
+
+Handles authentication and communication with external APIs to retrieve:
+- Invoice list by date range
+- Document download links
+
+Used as the first step in the pipeline.
+"""
 import os
 from typing import List, Dict, Any
 from pathlib import Path

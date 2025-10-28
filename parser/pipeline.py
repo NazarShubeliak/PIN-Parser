@@ -1,3 +1,14 @@
+"""
+Main pipeline orchestration.
+
+Coordinates the full flow:
+1. Fetch documents
+2. Parse PDFs
+3. Aggregate totals
+4. Push to Google Sheets
+
+Can be triggered manually or automatically.
+"""
 from parser.config import logger, DOWNLOAD_DIR, GOOGLE_SHEET_NAME, GOOGLE_SHEET_WORKSHEET_NAME
 from parser.api_client import fetch_documents, download_all_documents
 from parser.tools import clear_folder, find_document
