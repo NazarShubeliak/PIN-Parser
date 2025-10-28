@@ -34,7 +34,7 @@ root/
 ├── run.py                   
 ├── gui/
 │   ├── __init__.py         
-│   ├── gui_runner.py        
+│   └── gui_runner.py        
 ├── parser/                  
 │   ├── __init__.py
 │   ├── api_client.py
@@ -42,12 +42,12 @@ root/
 │   ├── pdf_parser.py
 │   ├── pipeline.py
 │   ├── sheet.py
-│   ├── tools.py
+│   └── tools.py
 ├── runners/                 
 │   ├── __init__.py
 │   ├── config.py
 │   ├── monthly_runner.py
-│   ├── weekly_runner.py
+│   └── weekly_runner.py
 ├── third_party/
 │   ├── __init__.py
 │   └── ctk_date_picker/     
