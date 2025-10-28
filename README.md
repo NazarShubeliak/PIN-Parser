@@ -31,14 +31,27 @@ python run.py --month  # Monthly mode
 ## 📁 Project Structure
 ```bash
 root/
-├── run.py                      # Unified entry point
+├── run.py                   
 ├── gui/
-│   ├── gui_runner.py           # GUI launcher
-│   └── pin_gui.py              # PinGui class
-├── runners/                    # CLI runners
-├── parser/                     # Core logic
+│   ├── __init__.py         
+│   ├── gui_runner.py        
+├── parser/                  
+│   ├── __init__.py
+│   ├── api_client.py
+│   ├── config.py
+│   ├── pdf_parser.py
+│   ├── pipeline.py
+│   ├── sheet.py
+│   ├── tools.py
+├── runners/                 
+│   ├── __init__.py
+│   ├── config.py
+│   ├── monthly_runner.py
+│   ├── weekly_runner.py
 ├── third_party/
-│   └── ctk_date_picker/        # External widget
+│   ├── __init__.py
+│   └── ctk_date_picker/     
+
 ```
 
 ## 🧩 Third-Party Integration
